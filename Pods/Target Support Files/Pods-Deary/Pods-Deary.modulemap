@@ -1,0 +1,6 @@
+framework module Pods_Deary {
+  umbrella header "Pods-Deary-umbrella.h"
+
+  export *
+  module * { export * }
+}

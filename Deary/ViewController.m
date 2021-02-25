@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+@import Flutter;
+#import "AppDelegate.h"
 
 @interface ViewController ()
 
@@ -17,6 +19,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+- (IBAction)showFlutterVC:(id)sender
+{
+    [self showFlutter];
+}
+
+- (void)showFlutter {
+    FlutterEngine *flutterEngine =
+        ((AppDelegate *)UIApplication.sharedApplication.delegate).flutterEngine;
+    FlutterViewController *flutterViewController =
+        [[FlutterViewController alloc] initWithEngine:flutterEngine nibName:nil bundle:nil];
+    [self presentViewController:flutterViewController animated:YES completion:nil];
 }
 
 

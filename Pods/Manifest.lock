@@ -1,0 +1,61 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - deary_flutter_module (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.5.0)
+
+DEPENDENCIES:
+  - AFNetworking
+  - deary_flutter_module (from `../deary_flutter_module/.ios/Flutter`)
+  - Flutter (from `../deary_flutter_module/.ios/Flutter/engine`)
+  - FlutterPluginRegistrant (from `../deary_flutter_module/.ios/Flutter/FlutterPluginRegistrant`)
+  - Masonry
+  - MBProgressHUD
+  - MJRefresh
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+
+EXTERNAL SOURCES:
+  deary_flutter_module:
+    :path: "../deary_flutter_module/.ios/Flutter"
+  Flutter:
+    :path: "../deary_flutter_module/.ios/Flutter/engine"
+  FlutterPluginRegistrant:
+    :path: "../deary_flutter_module/.ios/Flutter/FlutterPluginRegistrant"
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  deary_flutter_module: cd8fd218afefe82c4da7a723c3400d3c6c1bab65
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  FlutterPluginRegistrant: 2afd5ea46d3a949472c9b7da6462d8fbf7d8b16e
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+
+PODFILE CHECKSUM: f3170e2c26022c41cbdf60c2871b97ef3df02f04
+
+COCOAPODS: 1.10.0.beta.2

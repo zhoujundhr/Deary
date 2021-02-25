@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		306DD1FE25008EF5001358C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 306DD1FD25008EF5001358C2 /* Assets.xcassets */; };
 		306DD20125008EF5001358C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306DD1FF25008EF5001358C2 /* LaunchScreen.storyboard */; };
 		306DD20425008EF5001358C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 306DD20325008EF5001358C2 /* main.m */; };
+		CBAA87699D09CCB734E493DF /* Pods_Deary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DD3DC1A2AA233D38AFC6A2 /* Pods_Deary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,9 @@
 		306DD20025008EF5001358C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		306DD20225008EF5001358C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		306DD20325008EF5001358C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9BDCC7A804536921B3EA0353 /* Pods-Deary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deary.release.xcconfig"; path = "Target Support Files/Pods-Deary/Pods-Deary.release.xcconfig"; sourceTree = "<group>"; };
+		A06A41FADE3C35EF59675FB8 /* Pods-Deary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deary.debug.xcconfig"; path = "Target Support Files/Pods-Deary/Pods-Deary.debug.xcconfig"; sourceTree = "<group>"; };
+		C3DD3DC1A2AA233D38AFC6A2 /* Pods_Deary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Deary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBAA87699D09CCB734E493DF /* Pods_Deary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1247F98E9AE723D9D2DEC05C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A06A41FADE3C35EF59675FB8 /* Pods-Deary.debug.xcconfig */,
+				9BDCC7A804536921B3EA0353 /* Pods-Deary.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		306DD1E525008EF3001358C2 = {
 			isa = PBXGroup;
 			children = (
 				306DD1F025008EF3001358C2 /* Deary */,
 				306DD1EF25008EF3001358C2 /* Products */,
+				1247F98E9AE723D9D2DEC05C /* Pods */,
+				8B676573044B27DC0125D951 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +92,14 @@
 			path = Deary;
 			sourceTree = "<group>";
 		};
+		8B676573044B27DC0125D951 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3DD3DC1A2AA233D38AFC6A2 /* Pods_Deary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 306DD20725008EF5001358C2 /* Build configuration list for PBXNativeTarget "Deary" */;
 			buildPhases = (
+				734347FF3B4D3C8D2AEA7407 /* [CP] Check Pods Manifest.lock */,
+				D71AB6D2B53D3E170A6120B8 /* [CP-User] Run Flutter Build deary_flutter_module Script */,
 				306DD1EA25008EF3001358C2 /* Sources */,
 				306DD1EB25008EF3001358C2 /* Frameworks */,
 				306DD1EC25008EF3001358C2 /* Resources */,
+				8AFA1FDC188B2E5858AD3299 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,64 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		734347FF3B4D3C8D2AEA7407 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Deary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AFA1FDC188B2E5858AD3299 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Deary/Pods-Deary-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Deary/Pods-Deary-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Deary/Pods-Deary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D71AB6D2B53D3E170A6120B8 /* [CP-User] Run Flutter Build deary_flutter_module Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../deary_flutter_module/.metadata",
+				"${SRCROOT}/../deary_flutter_module/.ios/Flutter/App.framework/App",
+				"${SRCROOT}/../deary_flutter_module/.ios/Flutter/engine/Flutter.framework/Flutter",
+				"${SRCROOT}/../deary_flutter_module/.ios/Flutter/flutter_export_environment.sh",
+			);
+			name = "[CP-User] Run Flutter Build deary_flutter_module Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../deary_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\n\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		306DD1EA25008EF3001358C2 /* Sources */ = {
@@ -287,10 +372,11 @@
 		};
 		306DD20825008EF5001358C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A06A41FADE3C35EF59675FB8 /* Pods-Deary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZV32UX572C;
 				INFOPLIST_FILE = Deary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,17 +385,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhenzhen.dearing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = dearing_dis;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		306DD20925008EF5001358C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BDCC7A804536921B3EA0353 /* Pods-Deary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZV32UX572C;
 				INFOPLIST_FILE = Deary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +405,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhenzhen.dearing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = dearing_dis;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
