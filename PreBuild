@@ -1,0 +1,3 @@
+cd ../deary_flutter_module/
+flutter clean
+flutter build ios --release
