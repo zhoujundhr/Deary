@@ -107,6 +107,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 306DD20725008EF5001358C2 /* Build configuration list for PBXNativeTarget "Deary" */;
 			buildPhases = (
+				30609D9125E88735008D9B66 /* FlutterPreBuild */,
 				734347FF3B4D3C8D2AEA7407 /* [CP] Check Pods Manifest.lock */,
 				D71AB6D2B53D3E170A6120B8 /* [CP-User] Run Flutter Build deary_flutter_module Script */,
 				306DD1EA25008EF3001358C2 /* Sources */,
@@ -169,6 +170,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		30609D9125E88735008D9B66 /* FlutterPreBuild */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = FlutterPreBuild;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "cd  ${SRC_ROOT}/../deary_flutter_module/\nflutter clean\nflutter build ios --release\ncd ../\n\n\n\n";
+		};
 		734347FF3B4D3C8D2AEA7407 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,7 +241,7 @@
 			name = "[CP-User] Run Flutter Build deary_flutter_module Script";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../deary_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\n\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../deary_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\n\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
