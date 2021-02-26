@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30609E1A25E8A07E008D9B66 /* PreBuild in Resources */ = {isa = PBXBuildFile; fileRef = 30609E1925E8A07E008D9B66 /* PreBuild */; };
 		306DD1F325008EF3001358C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 306DD1F225008EF3001358C2 /* AppDelegate.m */; };
 		306DD1F625008EF3001358C2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 306DD1F525008EF3001358C2 /* SceneDelegate.m */; };
 		306DD1F925008EF3001358C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 306DD1F825008EF3001358C2 /* ViewController.m */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30609E1925E8A07E008D9B66 /* PreBuild */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PreBuild; sourceTree = SOURCE_ROOT; };
 		306DD1EE25008EF3001358C2 /* Deary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		306DD1F125008EF3001358C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		306DD1F225008EF3001358C2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		306DD1F025008EF3001358C2 /* Deary */ = {
 			isa = PBXGroup;
 			children = (
+				30609E1925E8A07E008D9B66 /* PreBuild */,
 				306DD1F125008EF3001358C2 /* AppDelegate.h */,
 				306DD1F225008EF3001358C2 /* AppDelegate.m */,
 				306DD1F425008EF3001358C2 /* SceneDelegate.h */,
@@ -163,6 +166,7 @@
 				306DD20125008EF5001358C2 /* LaunchScreen.storyboard in Resources */,
 				306DD1FE25008EF5001358C2 /* Assets.xcassets in Resources */,
 				306DD1FC25008EF3001358C2 /* Main.storyboard in Resources */,
+				30609E1A25E8A07E008D9B66 /* PreBuild in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
